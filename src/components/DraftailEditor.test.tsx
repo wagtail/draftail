@@ -299,10 +299,18 @@ describe("DraftailEditor", () => {
     });
   });
 
-  it("#maxListNesting", () => {
-    expect(
-      shallowNoLifecycle(<DraftailEditor maxListNesting={6} />),
-    ).toMatchSnapshot();
+  describe("#maxListNesting", () => {
+    it("renders when 6", () => {
+      expect(
+        shallowNoLifecycle(<DraftailEditor maxListNesting={6} />),
+      ).toMatchSnapshot();
+    });
+
+    it("skips when 1", () => {
+      expect(
+        shallowNoLifecycle(<DraftailEditor maxListNesting={1} />),
+      ).toMatchSnapshot();
+    });
   });
 
   describe("#onSave", () => {

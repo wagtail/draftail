@@ -14,6 +14,7 @@ import { condenseBlocks } from "draftjs-filters";
 // @ts-ignore
 import Editor from "draft-js-plugins-editor";
 import {
+  DRAFT_DEFAULT_MAX_DEPTH,
   registerCopySource,
   handleDraftEditorPastedText,
   createEditorStateFromRaw,
@@ -1140,7 +1141,9 @@ class DraftailEditor extends Component<
           placeholder={placeholder}
         />
 
-        <ListNestingStyles max={maxListNesting} />
+        {maxListNesting > DRAFT_DEFAULT_MAX_DEPTH ? (
+          <ListNestingStyles max={maxListNesting} />
+        ) : null}
       </div>
     );
   }
