@@ -65,7 +65,7 @@ class SentryBoundary extends Component<Props, State> {
                 </p>
                 <div>
                   <a
-                    href="https://github.com/springload/draftail/issues"
+                    href="https://github.com/wagtail/draftail/issues"
                     target="_blank"
                     rel="noreferrer"
                     style={{

@@ -51,30 +51,30 @@ export default {
     11: {
       type: "LINK",
       mutability: "MUTABLE",
-      data: { url: "https://github.com/springload/draftail" },
+      data: { url: "https://github.com/wagtail/draftail" },
     },
     12: {
       type: "LINK",
       mutability: "MUTABLE",
       data: {
-        url: "https://github.com/springload/draftail#getting-started",
+        url: "https://github.com/wagtail/draftail#getting-started",
       },
     },
     13: {
       type: "LINK",
       mutability: "MUTABLE",
-      data: { url: "https://github.com/springload/draftail#polyfills" },
+      data: { url: "https://github.com/wagtail/draftail#polyfills" },
     },
     14: {
       type: "LINK",
       mutability: "MUTABLE",
-      data: { url: "https://github.com/springload/draftail" },
+      data: { url: "https://github.com/wagtail/draftail" },
     },
     15: { type: "HORIZONTAL_RULE", mutability: "IMMUTABLE", data: {} },
     16: {
       type: "LINK",
       mutability: "MUTABLE",
-      data: { url: "https://github.com/springload/draftail/issues" },
+      data: { url: "https://github.com/wagtail/draftail/issues" },
     },
     17: {
       type: "LINK",

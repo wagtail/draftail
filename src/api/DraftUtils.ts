@@ -460,7 +460,7 @@ export default {
    * - Soft newlines.
    * - Hard newlines in the "defer breaking out of the block" case.
    * - Other hard newlines.
-   * See https://github.com/springload/draftail/issues/104,
+   * See https://github.com/wagtail/draftail/issues/104,
    * https://github.com/jpuri/draftjs-utils/issues/10.
    */
   handleNewLine(editorState: EditorState, event: React.KeyboardEvent) {

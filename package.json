@@ -23,10 +23,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/springload/draftail.git"
+    "url": "git+https://github.com/wagtail/draftail.git"
   },
   "bugs": {
-    "url": "https://github.com/springload/draftail/issues"
+    "url": "https://github.com/wagtail/draftail/issues"
   },
   "homepage": "https://www.draftail.org/",
   "files": [

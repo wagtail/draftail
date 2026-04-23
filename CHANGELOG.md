@@ -2,20 +2,20 @@
 
 > All notable changes to this project are documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [[v2.0.1]](https://github.com/springload/draftail/releases/tag/v2.0.1)
+## [[v2.0.1]](https://github.com/wagtail/draftail/releases/tag/v2.0.1)
 
 > Documentation: [v2.0.0 Getting started](https://www.draftail.org/docs/getting-started)
 
 ### Fixed
 
-- Fix Sass deprecation warning with `@import` syntax. [#459](https://github.com/springload/draftail/issues/459)
-- Fix Sass deprecation warning with legacy color functions. [#459](https://github.com/springload/draftail/issues/459)
+- Fix Sass deprecation warning with `@import` syntax. [#459](https://github.com/wagtail/draftail/issues/459)
+- Fix Sass deprecation warning with legacy color functions. [#459](https://github.com/wagtail/draftail/issues/459)
 
 ### Changed
 
 - Allow a wide range of downshift dependency versions: `^7.0.4 || ^8.5.0 || ^9.0.0`.
 
-## [[v2.0.0]](https://github.com/springload/draftail/releases/tag/v2.0.0)
+## [[v2.0.0]](https://github.com/wagtail/draftail/releases/tag/v2.0.0)
 
 > This release contains **breaking changes** compared to v1.4.1. It’s identical to the v2.0.0-rc.6 pre-release.
 >
@@ -36,11 +36,11 @@
 
 #### Miscellaneous improvements
 
-- Add strict TypeScript module definition for Draftail. [#388](https://github.com/springload/draftail/issues/388), [#429](https://github.com/springload/draftail/pull/429)
+- Add strict TypeScript module definition for Draftail. [#388](https://github.com/wagtail/draftail/issues/388), [#429](https://github.com/wagtail/draftail/pull/429)
 - Implement `onPaste` handler for entities to be able to create themselves on paste.
 - Empty blocks now have a `Draftail-block--empty` class for styling.
 - Add support for [Windows High contrast mode / Contrast themes](https://docs.microsoft.com/en-us/fluent-ui/web-components/design-system/high-contrast) for the whole editor UI.
-- Pass Draft.js ARIA props through. [#436](https://github.com/springload/draftail/issues/436), [#438](https://github.com/springload/draftail/pull/438)
+- Pass Draft.js ARIA props through. [#436](https://github.com/wagtail/draftail/issues/436), [#438](https://github.com/wagtail/draftail/pull/438)
 - Add a name prop and className to ToolbarGroup so different groups can have different styles, for example `Draftail-ToolbarGroup--entities`.
 
 ### Changed
@@ -98,32 +98,32 @@ The `controls` prop now takes objects rather than React components. Controls whi
 
 Entities now accept a `allowlist` attribute rather than `whitelist`.
 
-## [[v1.4.1]](https://github.com/springload/draftail/releases/tag/v1.4.1)
+## [[v1.4.1]](https://github.com/wagtail/draftail/releases/tag/v1.4.1)
 
 > Documentation: [v1.4.0 Getting started](https://www.draftail.org/docs/1.4.0/getting-started)
 
 ### Fixed
 
-- Fix plugin `keyBindingFn`s not being called. [#246](https://github.com/springload/draftail/pull/246), [#445](https://github.com/springload/draftail/pull/445)
+- Fix plugin `keyBindingFn`s not being called. [#246](https://github.com/wagtail/draftail/pull/246), [#445](https://github.com/wagtail/draftail/pull/445)
 
-## [[v1.4.0]](https://github.com/springload/draftail/releases/tag/v1.4.0)
+## [[v1.4.0]](https://github.com/wagtail/draftail/releases/tag/v1.4.0)
 
 > Documentation: [v1.4.0 Getting started](https://www.draftail.org/docs/1.4.0/getting-started)
 
 ### Added
 
-- Make it possible to hide buttons with default labels by setting their `label` to `null`. [#442](https://github.com/springload/draftail/pull/442)
+- Make it possible to hide buttons with default labels by setting their `label` to `null`. [#442](https://github.com/wagtail/draftail/pull/442)
 
 ### Changed
 
-- Improve the editor props’ JSDoc annotations. [#441](https://github.com/springload/draftail/pull/441)
+- Improve the editor props’ JSDoc annotations. [#441](https://github.com/wagtail/draftail/pull/441)
 
 ### Fixed
 
-- Fix empty buttons appearing when providing custom formats without a defined label or icon. [#442](https://github.com/springload/draftail/pull/442)
-- Clear save timeout handler when unmounting the editor. [#208](https://github.com/springload/draftail/issues/208), [#443](https://github.com/springload/draftail/pull/443)
+- Fix empty buttons appearing when providing custom formats without a defined label or icon. [#442](https://github.com/wagtail/draftail/pull/442)
+- Clear save timeout handler when unmounting the editor. [#208](https://github.com/wagtail/draftail/issues/208), [#443](https://github.com/wagtail/draftail/pull/443)
 
-## [[v1.3.0]](https://github.com/springload/draftail/releases/tag/v1.3.0)
+## [[v1.3.0]](https://github.com/wagtail/draftail/releases/tag/v1.3.0)
 
 > Documentation: [v1.3.0 Getting started](https://www.draftail.org/docs/1.3.0/getting-started)
 
@@ -131,22 +131,22 @@ Entities now accept a `allowlist` attribute rather than `whitelist`.
 
 ### Added
 
-- Add ability to disable the editor on demand with the [`readOnly`](https://www.draftail.org/docs/api#draftaileditor) prop, matching behavior of Draft.js. [#201](https://github.com/springload/draftail/issues/201), [#206](https://github.com/springload/draftail/pull/206), thanks to [@SpearThruster](https://github.com/SpearThruster).
-- Add ability to use the editor as a controlled component, like vanilla Draft.js editors, with [`editorState` and `onChange`](https://www.draftail.org/docs/api#editorstate-and-onchange) props. Have a look at the [controlled component documentation](https://www.draftail.org/docs/controlled-component) for further details. [#180](https://github.com/springload/draftail/issues/180), [#207](https://github.com/springload/draftail/pull/207).
+- Add ability to disable the editor on demand with the [`readOnly`](https://www.draftail.org/docs/api#draftaileditor) prop, matching behavior of Draft.js. [#201](https://github.com/wagtail/draftail/issues/201), [#206](https://github.com/wagtail/draftail/pull/206), thanks to [@SpearThruster](https://github.com/SpearThruster).
+- Add ability to use the editor as a controlled component, like vanilla Draft.js editors, with [`editorState` and `onChange`](https://www.draftail.org/docs/api#editorstate-and-onchange) props. Have a look at the [controlled component documentation](https://www.draftail.org/docs/controlled-component) for further details. [#180](https://github.com/wagtail/draftail/issues/180), [#207](https://github.com/wagtail/draftail/pull/207).
 
 ### Fixed
 
-- Fix undo/redo button icons not being customisable ([#195](https://github.com/springload/draftail/issues/195), [#196](https://github.com/springload/draftail/pull/196)).
+- Fix undo/redo button icons not being customisable ([#195](https://github.com/wagtail/draftail/issues/195), [#196](https://github.com/wagtail/draftail/pull/196)).
 
-## [[v1.2.1]](https://github.com/springload/draftail/releases/tag/v1.2.1)
+## [[v1.2.1]](https://github.com/wagtail/draftail/releases/tag/v1.2.1)
 
 > Documentation: [draftail.org/docs/1.2.1/getting-started](https://www.draftail.org/docs/1.2.1/getting-started)
 
 ### Fixed
 
-- Fix regression introduced in v1.2.0 where Draft.js-defined keyboard shortcuts were available unconditionally ([#189](https://github.com/springload/draftail/pull/189)).
+- Fix regression introduced in v1.2.0 where Draft.js-defined keyboard shortcuts were available unconditionally ([#189](https://github.com/wagtail/draftail/pull/189)).
 
-## [[v1.2.0]](https://github.com/springload/draftail/releases/tag/v1.2.0)
+## [[v1.2.0]](https://github.com/wagtail/draftail/releases/tag/v1.2.0)
 
 > Documentation: [draftail.org/docs/1.2.0/getting-started](https://www.draftail.org/docs/1.2.0/getting-started)
 
@@ -154,20 +154,20 @@ Entities now accept a `allowlist` attribute rather than `whitelist`.
 
 ### Added
 
-- Add [`plugins`](https://www.draftail.org/docs/plugins) API to support extensions of the editor using the [draft-js-plugins](https://github.com/draft-js-plugins/draft-js-plugins) architecture ([#83](https://github.com/springload/draftail/issues/83), [#171](https://github.com/springload/draftail/pull/171)).
+- Add [`plugins`](https://www.draftail.org/docs/plugins) API to support extensions of the editor using the [draft-js-plugins](https://github.com/draft-js-plugins/draft-js-plugins) architecture ([#83](https://github.com/wagtail/draftail/issues/83), [#171](https://github.com/wagtail/draftail/pull/171)).
 
 This new API makes it possible to build much more advanced extensions to the editor than ever before, such as autocompletes, [linkify](https://www.draftail.org/docs/extensions-tutorial-linkify), [custom blocks](https://www.draftail.org/docs/blocks#custom-block-rendering), [custom toolbars](https://www.draftail.org/docs/customising-toolbars), and more. Read the [release blog post](https://www.draftail.org/blog/2019/03/03/draftail-v1-2-0-supporting-modern-experiences) to learn more about the motivation for those new APIs.
 
 - Add data reset parameter to `DraftUtils.resetBlockWithType()`.
 - Add ability to disable or customise the editor toolbar with [`topToolbar`](https://www.draftail.org/docs/customising-toolbars).
 - Add ability to add a toolbar below the editor with [`bottomToolbar`](https://www.draftail.org/docs/customising-toolbars).
-- Add support for Markdown shortcuts for inline styles, e.g. `**` for bold, `_` for italic, etc ([#134](https://github.com/springload/draftail/issues/134), [#187](https://github.com/springload/draftail/pull/187)). View the full list of [keyboard shortcuts](https://www.draftail.org/docs/keyboard-shortcuts).
+- Add support for Markdown shortcuts for inline styles, e.g. `**` for bold, `_` for italic, etc ([#134](https://github.com/wagtail/draftail/issues/134), [#187](https://github.com/wagtail/draftail/pull/187)). View the full list of [keyboard shortcuts](https://www.draftail.org/docs/keyboard-shortcuts).
 
 ### Changed
 
 - Enable list continuation on Enter for custom `*-list-item` blocks. All that’s required is for the block type to end with `-list-item`.
 
-## [[v1.1.0]](https://github.com/springload/draftail/releases/tag/v1.1.0)
+## [[v1.1.0]](https://github.com/wagtail/draftail/releases/tag/v1.1.0)
 
 > Documentation: [draftail.org/docs/1.1.0/getting-started](https://www.draftail.org/docs/1.1.0/getting-started)
 
@@ -175,26 +175,26 @@ This new API makes it possible to build much more advanced extensions to the edi
 
 ### Added
 
-- Add [`onFocus`](https://www.draftail.org/docs/api#managing-focus) and [`onBlur`](https://www.draftail.org/docs/api#managing-focus) props to use callbacks on those events. This can be useful for [form validation](https://www.draftail.org/docs/form-validation). [#170](https://github.com/springload/draftail/issues/170), [#174](https://github.com/springload/draftail/pull/174), thanks to [@TheSpicyMeatball](https://github.com/TheSpicyMeatball).
+- Add [`onFocus`](https://www.draftail.org/docs/api#managing-focus) and [`onBlur`](https://www.draftail.org/docs/api#managing-focus) props to use callbacks on those events. This can be useful for [form validation](https://www.draftail.org/docs/form-validation). [#170](https://github.com/wagtail/draftail/issues/170), [#174](https://github.com/wagtail/draftail/pull/174), thanks to [@TheSpicyMeatball](https://github.com/TheSpicyMeatball).
 
 ### Fixed
 
-- Stop unnecessarily calling `onSave` in the editor’s `onBlur` ([#173](https://github.com/springload/draftail/issues/173)).
-- Prevent crash when filtering pasted content whose last block is to be removed (e.g. unsupported image) ([#179](https://github.com/springload/draftail/issues/179)).
-- Prevent crash in `DraftUtils.getEntitySelection`, when the provided entity key isn't valid (undefined, missing) ([#168](https://github.com/springload/draftail/pull/168)).
-- Fix entity removal and editing not doing anything when the selection is backwards (right to left) ([#168](https://github.com/springload/draftail/pull/168)).
+- Stop unnecessarily calling `onSave` in the editor’s `onBlur` ([#173](https://github.com/wagtail/draftail/issues/173)).
+- Prevent crash when filtering pasted content whose last block is to be removed (e.g. unsupported image) ([#179](https://github.com/wagtail/draftail/issues/179)).
+- Prevent crash in `DraftUtils.getEntitySelection`, when the provided entity key isn't valid (undefined, missing) ([#168](https://github.com/wagtail/draftail/pull/168)).
+- Fix entity removal and editing not doing anything when the selection is backwards (right to left) ([#168](https://github.com/wagtail/draftail/pull/168)).
 
 ### Changed
 
-- Update [`draftjs-filters`](https://github.com/thibaudcolas/draftjs-filters) dependency ([#179](https://github.com/springload/draftail/issues/179)).
+- Update [`draftjs-filters`](https://github.com/thibaudcolas/draftjs-filters) dependency ([#179](https://github.com/wagtail/draftail/issues/179)).
 - Update [`draftjs-conductor`](https://github.com/thibaudcolas/draftjs-conductor) dependency.
 
 ### Removed
 
-- Remove all [`PropTypes`](https://www.npmjs.com/package/prop-types). The project is now typed with [Flow](https://flow.org/) ([#127](https://github.com/springload/draftail/issues/127), [#178](https://github.com/springload/draftail/pull/178)).
-- Remove peerDependency on `prop-types` ([#127](https://github.com/springload/draftail/issues/127), [#178](https://github.com/springload/draftail/pull/178)).
+- Remove all [`PropTypes`](https://www.npmjs.com/package/prop-types). The project is now typed with [Flow](https://flow.org/) ([#127](https://github.com/wagtail/draftail/issues/127), [#178](https://github.com/wagtail/draftail/pull/178)).
+- Remove peerDependency on `prop-types` ([#127](https://github.com/wagtail/draftail/issues/127), [#178](https://github.com/wagtail/draftail/pull/178)).
 
-## [[v1.0.0]](https://github.com/springload/draftail/releases/tag/v1.0.0)
+## [[v1.0.0]](https://github.com/wagtail/draftail/releases/tag/v1.0.0)
 
 > Documentation: [draftail.org/docs/1.0.0/getting-started](https://www.draftail.org/docs/1.0.0/getting-started)
 
@@ -202,14 +202,14 @@ This new API makes it possible to build much more advanced extensions to the edi
 
 The project has reached a high-enough level of stability to be used in production, and breaking changes will now be reflected via major version changes.
 
-## [[v0.17.2]](https://github.com/springload/draftail/releases/tag/v0.17.2)
+## [[v0.17.2]](https://github.com/wagtail/draftail/releases/tag/v0.17.2)
 
 ### Changed
 
 - Update to `draftjs-filters@1.0.0`. This does not include any functional changes, but will cause a duplicated dependency for projects having both `draftail` and `draftjs-filters` as deps if they don’t also update `draftjs-filters`.
-- Add Draft.js copy-paste handling overrides from `draftjs-conductor`. This makes Draftail always preserve the full content as-is when copy-pasting between editors. Fix [#147](https://github.com/springload/draftail/issues/147) ([thibaudcolas/draftjs-conductor#2](https://github.com/thibaudcolas/draftjs-conductor/pull/2)).
+- Add Draft.js copy-paste handling overrides from `draftjs-conductor`. This makes Draftail always preserve the full content as-is when copy-pasting between editors. Fix [#147](https://github.com/wagtail/draftail/issues/147) ([thibaudcolas/draftjs-conductor#2](https://github.com/thibaudcolas/draftjs-conductor/pull/2)).
 
-## [[v0.17.1]](https://github.com/springload/draftail/releases/tag/v0.17.1)
+## [[v0.17.1]](https://github.com/wagtail/draftail/releases/tag/v0.17.1)
 
 ### Changed
 
@@ -217,9 +217,9 @@ The project has reached a high-enough level of stability to be used in productio
 
 ### Fixed
 
-- Add workaround for RichUtils image delete blind spot reported in [wagtail/wagtail#4370](https://github.com/wagtail/wagtail/issues/4370) ([#144](https://github.com/springload/draftail/pull/144)).
+- Add workaround for RichUtils image delete blind spot reported in [wagtail/wagtail#4370](https://github.com/wagtail/wagtail/issues/4370) ([#144](https://github.com/wagtail/draftail/pull/144)).
 
-## [[v0.17.0]](https://github.com/springload/draftail/releases/tag/v0.17.0)
+## [[v0.17.0]](https://github.com/wagtail/draftail/releases/tag/v0.17.0)
 
 ### Added
 
@@ -243,7 +243,7 @@ The project has reached a high-enough level of stability to be used in productio
 - Remove `DraftUtils.isSelectedBlockType()`.
 - Remove `DraftUtils.hasCurrentInlineStyle()`.
 
-## [[v0.16.0]](https://github.com/springload/draftail/releases/tag/v0.16.0)
+## [[v0.16.0]](https://github.com/wagtail/draftail/releases/tag/v0.16.0)
 
 ### Changed
 
@@ -261,7 +261,7 @@ The project has reached a high-enough level of stability to be used in productio
 
 - Remove React 15 from peerDependencies.
 
-## [[v0.15.0]](https://github.com/springload/draftail/releases/tag/v0.15.0)
+## [[v0.15.0]](https://github.com/wagtail/draftail/releases/tag/v0.15.0)
 
 ### Changed
 
@@ -272,7 +272,7 @@ The project has reached a high-enough level of stability to be used in productio
 
 - Remove support for `maxListNesting` greater than 10.
 
-## [[v0.14.0]](https://github.com/springload/draftail/releases/tag/v0.14.0)
+## [[v0.14.0]](https://github.com/wagtail/draftail/releases/tag/v0.14.0)
 
 ### Added
 
@@ -289,7 +289,7 @@ The project has reached a high-enough level of stability to be used in productio
 
 - Fix `DraftUtils.addLineBreak` adding line breaks in the wrong place when selection is collapsed.
 
-## [[v0.13.0]](https://github.com/springload/draftail/releases/tag/v0.13.0)
+## [[v0.13.0]](https://github.com/wagtail/draftail/releases/tag/v0.13.0)
 
 ### Added
 
@@ -306,7 +306,7 @@ The project has reached a high-enough level of stability to be used in productio
 - Prevent toolbar tooltip from having a transition delay on close.
 - Prevent toolbar tooltip from staying open when hovered.
 
-## [[v0.12.0]](https://github.com/springload/draftail/releases/tag/v0.12.0)
+## [[v0.12.0]](https://github.com/wagtail/draftail/releases/tag/v0.12.0)
 
 ### Added
 
@@ -325,13 +325,13 @@ The project has reached a high-enough level of stability to be used in productio
 
 - Fix icons / labels alignment in the toolbar.
 
-## [[v0.11.0]](https://github.com/springload/draftail/releases/tag/v0.11.0)
+## [[v0.11.0]](https://github.com/wagtail/draftail/releases/tag/v0.11.0)
 
 ### Added
 
 - Add new Sass constants to make the editor more themable: `$draftail-editor-padding, $draftail-editor-text, $draftail-editor-font-family, $draftail-editor-font-size, $draftail-editor-line-height, $draftail-toolbar-radius, $draftail-editor-border, $draftail-toolbar-tooltip-radius, $draftail-toolbar-tooltip-duration, $draftail-toolbar-tooltip-delay`.
 - Delay toolbar tooltip opening on hover by 0.5s, animated over 0.1s.
-- Make Markdown-style markers work on non-empty blocks ([#53](https://github.com/springload/draftail/issues/53)).
+- Make Markdown-style markers work on non-empty blocks ([#53](https://github.com/wagtail/draftail/issues/53)).
 
 ### Changed
 
@@ -345,13 +345,13 @@ The project has reached a high-enough level of stability to be used in productio
 - Rename `options` prop to `entityType` for entity sources.
 - Rename `onUpdate` prop to `onComplete` for entity sources.
 - Rename `entityConfig` prop to `entityType` for entity blocks.
-- Replace normalize API with `draftjs-filters` ([#123](https://github.com/springload/draftail/issues/123)).
+- Replace normalize API with `draftjs-filters` ([#123](https://github.com/wagtail/draftail/issues/123)).
 - Update toolbar tooltips to show markdown markers for all blocks.
 
 ### Fixed
 
 - Prevent toolbar button labels from being selected.
-- Fix newline block insertion & reset creating 2 entries in undo stack ([#105](https://github.com/springload/draftail/issues/105)).
+- Fix newline block insertion & reset creating 2 entries in undo stack ([#105](https://github.com/wagtail/draftail/issues/105)).
 
 ### Removed
 
@@ -363,7 +363,7 @@ The project has reached a high-enough level of stability to be used in productio
 - Remove `DraftUtils.getEntityRange()`.
 - Remove `onClose` prop for entity sources.
 
-## [[v0.10.0]](https://github.com/springload/draftail/releases/tag/v0.10.0)
+## [[v0.10.0]](https://github.com/wagtail/draftail/releases/tag/v0.10.0)
 
 ### Added
 
@@ -371,12 +371,12 @@ The project has reached a high-enough level of stability to be used in productio
 - Add `DraftUtils.updateBlockEntity` method, with workaround for Draft.s 0.10 entity data update bug.
 - Add shortcuts for blockquote and code block to toolbar tooltips.
 - Use alternative keyboard shortcuts for more formats.
-- Add default labels & descriptions for built-in formats ([#122](https://github.com/springload/draftail/issues/122)).
-- Process, filter, migrate available blocks, styles and entities when pasting rich text ([#50](https://github.com/springload/draftail/pull/50) & [#103](https://github.com/springload/draftail/pull/103) thanks to [@inostia](https://github.com/inostia), see [#123](https://github.com/springload/draftail/issues/123) for next steps).
-- Add support for custom text decorators ([#121](https://github.com/springload/draftail/issues/121)).
+- Add default labels & descriptions for built-in formats ([#122](https://github.com/wagtail/draftail/issues/122)).
+- Process, filter, migrate available blocks, styles and entities when pasting rich text ([#50](https://github.com/wagtail/draftail/pull/50) & [#103](https://github.com/wagtail/draftail/pull/103) thanks to [@inostia](https://github.com/inostia), see [#123](https://github.com/wagtail/draftail/issues/123) for next steps).
+- Add support for custom text decorators ([#121](https://github.com/wagtail/draftail/issues/121)).
 - Add predefined classes for block depth levels above 4, of the format `public-DraftStyleDefault-depth${depth}`.
 - Add `nested-list-item($depth)` Sass mixin to generate styles for arbitrary list item nesting.
-- Introduce new `Draftail-` class namespace for all styles ([#63](https://github.com/springload/draftail/issues/63)).
+- Introduce new `Draftail-` class namespace for all styles ([#63](https://github.com/wagtail/draftail/issues/63)).
 - Expose Sass stylesheets to Draftail users, for extension.
 
 ### Changed
@@ -385,19 +385,19 @@ The project has reached a high-enough level of stability to be used in productio
 - Disable ligatures in the editor, to simplify cursor behaviour.
 - Stop bundling the Draft.js styles. They now have to be manually included. The previous approach was prone to version mismatches.
 - Configure text antialiasing for Firefox.
-- Change `Icon` implementation to use SVG by default. Supports symbol references, SVG path(s), and arbitrary React components ([#119](https://github.com/springload/draftail/issues/119)).
+- Change `Icon` implementation to use SVG by default. Supports symbol references, SVG path(s), and arbitrary React components ([#119](https://github.com/wagtail/draftail/issues/119)).
 - Disable pointer events on all icons by default.
 - Remove toolbar hover styles.
 - Make more of the editor styling overridable.
 - Move `Tooltip` outside of Draftail package.
 - Refactor tooltip for inline entities to be defined directly in decorators. They should now define their own tooltip (or other control), rather than rely on `data-tooltip`.
 - Move `Portal` component outside of Draftail.
-- Add `block` prop to entityTypes, and move `IMAGE` and `EMBED` blocks outside of Draftail ([#121](https://github.com/springload/draftail/issues/121)).
+- Add `block` prop to entityTypes, and move `IMAGE` and `EMBED` blocks outside of Draftail ([#121](https://github.com/wagtail/draftail/issues/121)).
 - Provide methods for `entityTypes`' `block` to edit, remove entity.
 
 ### Removed
 
-- Remove Save and Cancel buttons from image block, thanks to [@allcaps](https://github.com/allcaps) ([#102](https://github.com/springload/draftail/pull/102))
+- Remove Save and Cancel buttons from image block, thanks to [@allcaps](https://github.com/allcaps) ([#102](https://github.com/wagtail/draftail/pull/102))
 - Remove `DraftUtils.getSelectedEntitySelection`. It can be replaced by `DraftUtils.getEntitySelection(editorState, DraftUtils.getSelectionEntity(editorState))`.
 - Remove built-in support for `MODEL` entities.
 - Remove built-in support for `EMBED` entities.
@@ -407,24 +407,24 @@ The project has reached a high-enough level of stability to be used in productio
 
 ### Fixed
 
-- Update handleNewLine to defer breakout in code-block. Fix [#104](https://github.com/springload/draftail/issues/104).
-- Fix toolbar entity edit and remove not working on selection pre first char. Fix [#109](https://github.com/springload/draftail/issues/109).
+- Update handleNewLine to defer breakout in code-block. Fix [#104](https://github.com/wagtail/draftail/issues/104).
+- Fix toolbar entity edit and remove not working on selection pre first char. Fix [#109](https://github.com/wagtail/draftail/issues/109).
 - Fix block type transformations moving selection to the wrong block.
 - Fix editor scrolling in the wrong position when breaking a big block (https://github.com/facebook/draft-js/issues/304#issuecomment-327606596).
 
-## [[v0.9.0]](https://github.com/springload/draftail/releases/tag/v0.9.0)
+## [[v0.9.0]](https://github.com/wagtail/draftail/releases/tag/v0.9.0)
 
 ### Added
 
-- Add support for [custom inline styles](https://github.com/springload/draftail#custom-inline-styles), thanks to [@vincentaudebert](https://github.com/vincentaudebert) ([#97](https://github.com/springload/draftail/pull/97)).
-- Add [basic styles](https://github.com/springload/draftail/blob/60f2f6ef5684c10c7c409a6333f2b157b955fa45/lib/api/constants.js#L51) for common inline styles.
+- Add support for [custom inline styles](https://github.com/wagtail/draftail#custom-inline-styles), thanks to [@vincentaudebert](https://github.com/vincentaudebert) ([#97](https://github.com/wagtail/draftail/pull/97)).
+- Add [basic styles](https://github.com/wagtail/draftail/blob/60f2f6ef5684c10c7c409a6333f2b157b955fa45/lib/api/constants.js#L51) for common inline styles.
 - Add new `description` prop for all formats to describe the format's use with more text than the `label`.
 - Add tooltips for toolbar buttons to display the full control `description` as well as its keyboard shortcut.
 - Add separate button groups in the toolbar.
-- Add basic undo/redo controls in the toolbar ([#100](https://github.com/springload/draftail/pull/100)), displaying the related keyboard shortcuts.
+- Add basic undo/redo controls in the toolbar ([#100](https://github.com/wagtail/draftail/pull/100)), displaying the related keyboard shortcuts.
 - Introduce icons for hr: `―` and br: `↵`.
 - Add keyboard shortcuts for superscript & subscript.
-- Add more Markdown-like markers for heading levels (`##`), code block (triple backtick), blockquote (`>`), hr (`---`) ([#53](https://github.com/springload/draftail/issues/53)).
+- Add more Markdown-like markers for heading levels (`##`), code block (triple backtick), blockquote (`>`), hr (`---`) ([#53](https://github.com/wagtail/draftail/issues/53)).
 - Add `spellCheck` prop, passed to Draft.js `Editor`. Sets whether spellcheck is turned on for your editor.
 - Add support for React 16.
 
@@ -432,7 +432,7 @@ The project has reached a high-enough level of stability to be used in productio
 
 - Update keyboard shortcuts format to follow that of Google Docs.
 - Refine toolbar styles. Fix toolbar to the top of the page when sticky.
-- Make the editor look closer to a textarea ([#96](https://github.com/springload/draftail/issue/96)).
+- Make the editor look closer to a textarea ([#96](https://github.com/wagtail/draftail/issue/96)).
 - Update strikethrough shortcut from Google Docs.
 - Update Draft.js dependency to 0.10.4, and `draftjs-utils` to 0.8.8.
 - Stop preserving Markdown-like block marker when undoing block type change.
@@ -440,9 +440,9 @@ The project has reached a high-enough level of stability to be used in productio
 
 ### Fixed
 
-- Fix tooltip position when scrolling ([#99](https://github.com/springload/draftail/pull/99)).
+- Fix tooltip position when scrolling ([#99](https://github.com/wagtail/draftail/pull/99)).
 - Fix beforeInput text replacement happening on non-collapsed selections.
-- Prevent text inserted after entities from continuing the entity. Fix [#86](https://github.com/springload/draftail/issue/86) ([#106](https://github.com/springload/draftail/pull/106)).
+- Prevent text inserted after entities from continuing the entity. Fix [#86](https://github.com/wagtail/draftail/issue/86) ([#106](https://github.com/wagtail/draftail/pull/106)).
 
 ### How to upgrade
 
@@ -470,7 +470,7 @@ blockTypes={[
 ]}
 ```
 
-## [[v0.8.0]](https://github.com/springload/draftail/releases/tag/v0.8.0)
+## [[v0.8.0]](https://github.com/wagtail/draftail/releases/tag/v0.8.0)
 
 ### Added
 
@@ -483,13 +483,13 @@ blockTypes={[
 - Use references to window object instead of global.
 - Update dependencies to remove Immutable.js duplication
 
-## [[v0.7.3]](https://github.com/springload/draftail/releases/tag/v0.7.3)
+## [[v0.7.3]](https://github.com/wagtail/draftail/releases/tag/v0.7.3)
 
 ### Added
 
 - Expose reusable Portal component as part of the API.
 
-## [[v0.7.2]](https://github.com/springload/draftail/releases/tag/v0.7.2)
+## [[v0.7.2]](https://github.com/wagtail/draftail/releases/tag/v0.7.2)
 
 ### Changed
 
@@ -500,13 +500,13 @@ blockTypes={[
 
 - Fix `editor` class name concatenation.
 
-## [[v0.7.1]](https://github.com/springload/draftail/releases/tag/v0.7.1)
+## [[v0.7.1]](https://github.com/wagtail/draftail/releases/tag/v0.7.1)
 
 ### Fixed
 
 - Fix CSS import present in published library.
 
-## [[v0.7.0]](https://github.com/springload/draftail/releases/tag/v0.7.0)
+## [[v0.7.0]](https://github.com/wagtail/draftail/releases/tag/v0.7.0)
 
 ### Added
 
@@ -526,7 +526,7 @@ blockTypes={[
 
 - Remove `Element.closest` polyfill from main lib.
 
-## [[v0.6.0]](https://github.com/springload/draftail/releases/tag/v0.6.0)
+## [[v0.6.0]](https://github.com/wagtail/draftail/releases/tag/v0.6.0)
 
 ### Added
 
@@ -537,7 +537,7 @@ blockTypes={[
 - Change empty `RawDraftContentState` in conversion API to be null.
 - Change entity type nomenclature to use `source` and `decorator` in place of `control` and `component`.
 
-## [[v0.5.0]](https://github.com/springload/draftail/releases/tag/v0.5.0)
+## [[v0.5.0]](https://github.com/wagtail/draftail/releases/tag/v0.5.0)
 
 ### Added
 
@@ -553,13 +553,13 @@ blockTypes={[
 - Copy/paste of rich text is now configurable via the `stripPastedStyles` option.
 - Copy/paste of rich text is now disabled by default. This will be enabled by default once it is better supported.
 
-## [[v0.4.1]](https://github.com/springload/draftail/releases/tag/v0.4.1)
+## [[v0.4.1]](https://github.com/wagtail/draftail/releases/tag/v0.4.1)
 
 ### Fixed
 
 - Fix image block not unlocking editor on cancel.
 
-## [[v0.4.0]](https://github.com/springload/draftail/releases/tag/v0.4.0)
+## [[v0.4.0]](https://github.com/wagtail/draftail/releases/tag/v0.4.0)
 
 ### Added
 
@@ -595,26 +595,26 @@ blockTypes={[
 - draftail no longer depends on jQuery.
 - draftail no longer depends on the Wagtail font icon.
 
-## [[v0.3.3]](https://github.com/springload/draftail/releases/tag/v0.3.3)
+## [[v0.3.3]](https://github.com/wagtail/draftail/releases/tag/v0.3.3)
 
 ### Added
 
 - Allow customisation of block style function & block render map.
 
-## [[v0.3.2]](https://github.com/springload/draftail/releases/tag/v0.3.2)
+## [[v0.3.2]](https://github.com/wagtail/draftail/releases/tag/v0.3.2)
 
 ### Added
 
 - Pressing return on an empty list item should un-indent it until it is not nested, and then remove it.
 - Pressing return at the end of a block should create an empty unstyled block.
 
-## [[v0.3.1]](https://github.com/springload/draftail/releases/tag/v0.3.1)
+## [[v0.3.1]](https://github.com/wagtail/draftail/releases/tag/v0.3.1)
 
 ### Fixed
 
 - Buttons do not trigger a form submit
 
-## [[v0.3.0]](https://github.com/springload/draftail/releases/tag/v0.3.0)
+## [[v0.3.0]](https://github.com/wagtail/draftail/releases/tag/v0.3.0)
 
 > This release contains **breaking changes**.
 
@@ -624,22 +624,22 @@ blockTypes={[
 
 ### Changed
 
-- Expose onSave hook instead of auto field saving (https://github.com/springload/draftail/issues/23)
+- Expose onSave hook instead of auto field saving (https://github.com/wagtail/draftail/issues/23)
 
 ### Fixed
 
-- https://github.com/springload/draftail/issues/2
-- https://github.com/springload/draftail/issues/3
-- https://github.com/springload/draftail/issues/28
+- https://github.com/wagtail/draftail/issues/2
+- https://github.com/wagtail/draftail/issues/3
+- https://github.com/wagtail/draftail/issues/28
 
-## [[v0.2.0]](https://github.com/springload/draftail/releases/tag/v0.2.0)
+## [[v0.2.0]](https://github.com/wagtail/draftail/releases/tag/v0.2.0)
 
 ### Changed
 
 - Reworking most of the editor codebase to make it more maintainable.
 - Configurable block types and inline styles.
 
-## [[v0.1.0]](https://github.com/springload/draftail/releases/tag/v0.1.0)
+## [[v0.1.0]](https://github.com/wagtail/draftail/releases/tag/v0.1.0)
 
 First usable release!
 
@@ -647,7 +647,7 @@ First usable release!
 
 Template from http://keepachangelog.com/
 
-## [[vx.y.z]](https://github.com/springload/draftail/releases/tag/vx.y.z)
+## [[vx.y.z]](https://github.com/wagtail/draftail/releases/tag/vx.y.z)
 
 ### Added
 
