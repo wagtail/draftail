@@ -102,7 +102,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.75.6",
     "rollup-plugin-dts": "^4.2.2",
-    "sass": "^1.53.0",
+    "sass": "^1.99.0",
     "sass-loader": "^13.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-torchbox": "^1.0.0",
