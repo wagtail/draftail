@@ -23,7 +23,7 @@ Draftail aims for a mouse-free, keyboard-centric experience. Here are important 
 - API to build custom controls for links, images, and more.
 - Compatibility with the [`draft-js-plugins`](https://www.draft-js-plugins.com) ecosystem to build more advanced extensions.
 
-> This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html), and measures performance and [code coverage](https://coveralls.io/github/springload/draftail). We also try to follow accessibility best practices (tested with [aXe](https://www.axe-core.org/)) – please [get in touch](https://github.com/wagtail/draftail/issues/149#issuecomment-389476151) if you can help us do better in this area.
+> This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html), and measures performance and [code coverage](https://coveralls.io/github/wagtail/draftail). We also try to follow accessibility best practices (tested with [aXe](https://www.axe-core.org/)) – please [get in touch](https://github.com/wagtail/draftail/issues/149#issuecomment-389476151) if you can help us do better in this area.
 
 ## Documentation
 
@@ -40,4 +40,4 @@ If you just want to set up the project on your own computer, the contribution gu
 
 ## Credits
 
-Draftail is made possible by the work of [Springload](https://github.com/springload/). View the full list of [contributors](https://github.com/wagtail/draftail/graphs/contributors). [MIT](LICENSE) licensed. The [draftail.org](https://github.com/thibaudcolas/draftail.org) documentation and demos are powered by [Netlify](https://www.netlify.com/).
+Draftail was created by [Springload](https://github.com/springload/), and is now maintained by Wagtail contributors. View the full list of [contributors](https://github.com/wagtail/draftail/graphs/contributors). [MIT](LICENSE) licensed. The [draftail.org](https://github.com/thibaudcolas/draftail.org) documentation and demos are powered by [Netlify](https://www.netlify.com/).

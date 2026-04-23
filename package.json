@@ -2,7 +2,7 @@
   "name": "draftail",
   "version": "2.0.1",
   "description": "📝🍸 A configurable rich text editor built with Draft.js",
-  "author": "Springload",
+  "author": "Springload and Contributors",
   "license": "MIT",
   "main": "dist/draftail.cjs.js",
   "module": "dist/draftail.esm.js",
