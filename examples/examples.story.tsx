@@ -36,8 +36,10 @@ import {
   ENTITY_TYPE,
   InlineToolbar,
   MetaToolbar,
+  TableWrapper,
 } from "../src";
 import indexContentState from "./constants/indexContentState";
+import tableContentState from "./constants/tableContentState";
 
 const hashtagPlugin = createHashtagPlugin();
 const linkify = linkifyPlugin();
@@ -423,4 +425,34 @@ storiesOf("Examples", module)
       commands
       plugins={[autoEmbed, linkify]}
     />
-  ));
+  ))
+  .add("Table support", () => {
+    const [editorState, setEditorState] = useState(() =>
+      createEditorStateFromRaw(tableContentState as RawDraftContentState),
+    );
+    const editorStateRef = React.useRef(editorState);
+    editorStateRef.current = editorState;
+
+    return (
+      <EditorWrapper
+        id="table-support"
+        editorState={editorState}
+        onChange={setEditorState}
+        stripPastedStyles={false}
+        inlineStyles={[INLINE_CONTROL.BOLD, INLINE_CONTROL.ITALIC]}
+        blockTypes={[
+          BLOCK_CONTROL.HEADER_TWO,
+          BLOCK_CONTROL.UNORDERED_LIST_ITEM,
+          {
+            type: "table-cell",
+            wrapper: (
+              <TableWrapper
+                getEditorState={() => editorStateRef.current}
+                onChange={setEditorState}
+              />
+            ),
+          },
+        ]}
+      />
+    );
+  });

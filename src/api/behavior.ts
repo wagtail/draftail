@@ -61,10 +61,12 @@ export default {
     }
 
     blockTypes
-      .filter((block) => block.element)
+      .filter((block) => block.element || block.wrapper)
       .forEach((block) => {
+        const existing = renderMap.get(block.type);
         renderMap = renderMap.set(block.type, {
-          element: block.element,
+          element: block.element || (existing && existing.element) || "div",
+          ...(block.wrapper ? { wrapper: block.wrapper } : {}),
         });
       });
 

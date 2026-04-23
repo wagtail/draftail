@@ -1,0 +1,82 @@
+.Draftail-TableWrapper {
+  margin: 0.5em 0;
+
+  &__container {
+    margin-bottom: 1em;
+  }
+
+  &__table {
+    width: auto;
+    border-collapse: collapse;
+  }
+
+  &__tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    vertical-align: top;
+    min-width: 4em;
+  }
+
+  &__controls-row {
+    border: none;
+  }
+
+  &__col-controls {
+    border: none;
+    padding: 0 0.25em 0.25em;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  &__row-controls {
+    border: none;
+    padding: 0 0.25em;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    margin: 0 1px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f5f5f5;
+    cursor: pointer;
+    font-size: 0.85em;
+    line-height: 1.4em;
+    text-align: center;
+    color: #555;
+
+    &:hover {
+      background: #e0e0e0;
+      border-color: #999;
+    }
+
+    &--insert-col,
+    &--insert-row {
+      color: #2a7;
+
+      &:hover {
+        background: #e0f5ec;
+        border-color: #2a7;
+      }
+    }
+
+    &--delete-col,
+    &--delete-row {
+      color: #c33;
+
+      &:hover {
+        background: #fde8e8;
+        border-color: #c33;
+      }
+    }
+  }
+}

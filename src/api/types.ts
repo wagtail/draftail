@@ -27,6 +27,8 @@ export interface BlockTypeControl extends Control {
   type: string;
   /** DOM element used to display the block within the editor area. */
   element?: string;
+  /** React element to wrap consecutive blocks of this type. */
+  wrapper?: React.ReactElement;
 }
 
 export interface InlineStyleControl extends Control {

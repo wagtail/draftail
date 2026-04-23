@@ -92,6 +92,7 @@ describe("draftail", () => {
         "LegacyControlControl": undefined,
         "MetaToolbar": [Function],
         "MetaToolbarProps": undefined,
+        "TableWrapper": [Function],
         "TextDirectionality": undefined,
         "Toolbar": [Function],
         "ToolbarButton": [Function],

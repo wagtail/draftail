@@ -40,6 +40,7 @@ export {
   CommandPaletteProps,
 } from "./components/CommandPalette/CommandPalette";
 export { default as DraftUtils } from "./api/DraftUtils";
+export { default as TableWrapper } from "./blocks/TableWrapper";
 export {
   BLOCK_TYPE,
   BlockType,
