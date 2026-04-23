@@ -79,7 +79,7 @@ export default {
     17: {
       type: "LINK",
       mutability: "MUTABLE",
-      data: { url: "https://github.com/springload/draftjs_exporter" },
+      data: { url: "https://github.com/wagtail/draftjs_exporter" },
     },
     18: {
       type: "LINK",
@@ -96,7 +96,7 @@ export default {
     20: {
       type: "LINK",
       mutability: "MUTABLE",
-      data: { url: "https://github.com/springload/" },
+      data: { url: "https://github.com/wagtail/" },
     },
     21: {
       type: "LINK",
