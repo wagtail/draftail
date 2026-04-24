@@ -2,6 +2,7 @@
 
 // Avoid styling list items as they commonly have markers in the ::before pseudo element.
 .#{$DRAFTAIL}block--empty:not([class*="-list-item"])::before {
+  content: attr(data-placeholder);
   position: absolute;
   pointer-events: none;
   user-select: none;
