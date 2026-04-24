@@ -367,6 +367,16 @@ export default {
             ...t,
             category: "entityTypes",
           }));
+
+        if (enableHorizontalRule) {
+          items.push({
+            type: ENTITY_TYPE.HORIZONTAL_RULE,
+            ...(typeof enableHorizontalRule === "object"
+              ? enableHorizontalRule
+              : {}),
+            category: "entityTypes",
+          });
+        }
       }
 
       return {
